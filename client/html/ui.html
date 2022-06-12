@@ -1,0 +1,21 @@
+<template name="ui">
+    <div id="ui">
+        <h2>Hallo</h2>
+
+        {{#if inGame}}
+            <p id="status">
+                Status: {{status}}
+            </p>
+        {{else}}
+            <button id="play-btn">Play</button>
+        {{/if}}
+
+        <div>
+            <div class="selectableField">
+                <button id="Stein">Rock</button>
+                <button id="Papier">Paper</button>
+                <button id="Schere">Scissor</button>
+            </div>
+        </div>
+    </div>
+</template>
